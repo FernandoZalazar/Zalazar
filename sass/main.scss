@@ -1,0 +1,1135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+$color-href: white;
+
+
+#body{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "section"
+    "footer";
+    grid-template-rows: 5% 15% 65% 15%;
+}
+.nav{
+    position: sticky;
+    top: 0%;
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: 
+    "inicio comunidad productos ayuda registrarme";
+    grid-template-columns: 10% 10% 10% 10% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    opacity: 80%;
+    z-index: 2;
+    .inicio{
+        grid-area: inicio;
+        display: block;
+        text-decoration: none;
+        color: $color-href;
+        transition: all 300ms;
+    }
+    .comunidad{
+        grid-area: comunidad;
+        display: block;
+        text-decoration: none;
+        color: $color-href;
+        transition: all 300ms;
+    }
+    .productos{
+        grid-area: productos;
+        display: inline;
+        text-decoration: none;
+        color: $color-href;
+        transition: all 300ms;
+    }
+    .ayuda{
+        grid-area: ayuda;
+        display: block;
+        text-decoration: none;
+        color: $color-href;
+        transition: all 300ms;
+    }
+    .registrarme{
+        grid-area: registrarme;
+        display: block;
+        text-decoration: none;
+        margin-left: 40rem;
+        color: $color-href;
+        transition: all 300ms;
+    }    
+
+}
+.nav a:hover{
+    transform: scale(1.2);
+    color: rgb(218, 3, 3);
+}
+.header{
+    grid-area: header;
+    background-image: url(../multimedia/pincel-titulo1.jpeg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgb(167, 98, 86);
+    @keyframes header{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .header__titulo{
+        font-size: 10rem;
+        animation-name: titulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+    }
+    @keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    .header__h2{
+        font-size: 1.5rem;
+        animation-name: subtitulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+
+    }
+    @keyframes subtitulo{
+        0%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+}
+.apps{
+    z-index: 2;
+    .apps__facebook-oficial {
+        background-image: url(../multimedia/facebook1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 20%;
+        left: 93%;
+        transition: all 300ms;
+    }
+    .apps__insta-oficial{
+        background-image: url(../multimedia/instagram.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 31%;
+        left: 93%;
+        transition: all 300ms;
+    }
+    .apps__tw-oficial{
+        background-image: url(../multimedia/twitter.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 42%;
+        left: 93%;
+        transition: all 300ms;
+    }
+    .apps__wpp-oficial{
+        background-image: url(../multimedia/whastapp.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 53%;
+        left: 93%;
+        transition: all 300ms;
+    }
+    .apps__mail-oficial{
+        background-image: url(../multimedia/logogmail.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 64%;
+        left: 93%;
+        transition: all 300ms;
+    }
+    .apps__ubi-oficial{
+        background-image: url(../multimedia/googlemaps-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 100%;
+        padding: 1.3rem;
+        position: fixed;
+        top: 75%;
+        left: 93%;
+        transition: all 300ms;
+    }
+}
+.apps a:hover{
+    transform: scale(1.2);
+}
+.section{
+    grid-area: section;
+    display: grid;
+    grid-template-areas:
+    "lija pincel rodillo"
+    "carrusel carrusel carrusel"
+    "consejos consejos consejos";
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 35% 33% 32%;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 2rem;
+    z-index: 0;
+    .lija{
+        grid-area: lija;
+        justify-self: center;
+        align-self: center;
+        transition: all 300ms;
+        .lija-dos{
+            background-color: rgb(34, 34, 34);
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px black;
+            color: white;
+        }
+    }
+    .pincel{
+        grid-area: pincel;
+        justify-self: center;
+        align-self: center;
+        transition: all 300ms;
+        .pincel-dos{
+            background-color: rgb(34, 34, 34);
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px black;
+            color: white;
+        }
+    }
+    .rodillo{
+        grid-area: rodillo;
+        justify-self: center;
+        align-self: center;
+        transition: all 300ms;
+        .rodillo-dos{
+            background-color: rgb(34, 34, 34);
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px black;
+            color: white;
+        }
+    }
+    .carrusel{
+        grid-area: carrusel;
+    }
+    .row{
+        margin-top: 0rem;
+        margin-bottom: 20rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+    .consejos{
+        grid-area: consejos;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        .consejos-h1{
+            text-align: center;
+            opacity: 80%;
+            padding-bottom: 2rem;
+        }
+        .consejos-borde{
+            border-top: solid 1px rgb(117, 117, 117);
+            padding-top: 3rem;
+        }
+        .consejos-ul{
+            margin-left: 14rem;
+            margin-right: 16rem;
+        }
+        .consejos-li{
+            border-bottom: solid 1px rgb(117, 117, 117);
+            margin-bottom: 0.5rem;
+            list-style: none;
+        }
+        .consejos-a{
+            text-decoration: none;
+            padding-left: 1rem;
+        }
+        
+    }
+
+}
+.lija:hover{
+    transform: scale(1.05);
+}
+.pincel:hover{
+    transform: scale(1.05);
+}
+.rodillo:hover{
+    transform: scale(1.05);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(145, 145, 145);
+    display: grid;
+    grid-template-areas: 
+    "zalazar horarios listado";
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    z-index: 1;
+    .footer__zalazar{
+        grid-area: zalazar;
+        margin-top: 4em;
+        .footer__zalazar--h2{
+            font-size: 1.5em;
+        }
+        .footer__zalazar--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer__horario{
+        grid-area: horarios;
+        margin-top: 4em;
+        .footer__horario--h2{
+            font-size: 1.5em;
+        }
+        .footer__horario--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer__listado{
+        grid-area: listado;
+        margin-top: 4em;
+        .footer__listado--h2{
+            font-size: 1.5em;
+        }
+        .footer__listado--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+
+    }
+}
+/*PAGE PRODUCTOS*/
+#body-productos{
+    display: grid;
+    grid-template-areas: 
+    "nav-pro"
+    "header-pro"
+    "section-pro"
+    "footer-pro";
+    grid-template-rows: 5% 15% 65% 15%;
+}
+.nav-pro{
+    position: sticky;
+    top: 0%;
+    grid-area: nav-pro;
+    display: grid;
+    grid-template-areas: 
+    "inicio comunidad productos ayuda registrarme";
+    grid-template-columns: 10% 10% 10% 10% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    opacity: 80%;
+    z-index: 2;
+    .inicio-pro{
+        grid-area: inicio;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .comunidad-pro{
+        grid-area: comunidad;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .productos-pro{
+        grid-area: productos;
+        display: inline;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .ayuda-pro{
+        grid-area: ayuda;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .registrarme-pro{
+        grid-area: registrarme;
+        display: block;
+        text-decoration: none;
+        margin-left: 40rem;
+        color: white;
+        transition: all 300ms;
+    }    
+
+}
+.nav-pro a:hover{
+    transform: scale(1.2);
+    color: rgb(218, 3, 3);
+}
+.header-pro{
+    grid-area: header-pro;
+    background-image: url(../multimedia/pincel-titulo1.jpeg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgb(167, 98, 86);
+    @keyframes header{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .header-pro__titulo{
+        font-size: 10rem;
+        animation-name: titulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+    }
+    @keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    .header-pro__h2{
+        font-size: 1.5rem;
+        animation-name: subtitulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+
+    }
+    @keyframes subtitulo{
+        0%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+}
+.section-pro{
+    grid-area: section-pro;
+    display: grid;
+    grid-template-areas:
+    "card-pinceles card-lijas card-minirodillo card-rodillo "
+    "card-espatulas card-pintura card-bandejas card-escaleras ";
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    background-color: rgb(241, 241, 241);
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 10rem;
+    .card-pinceles{
+        grid-area: card-pinceles;
+        margin-bottom: 2rem;
+    }
+    .estilo{
+            background-color: rgb(34, 34, 34);
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px black;
+            color: white;
+            transition: all 300ms;
+        }
+    .card-lijas{
+        grid-area: card-lijas;
+        margin-bottom: 2rem;
+    }
+    .card-minirodillo{
+        grid-area: card-minirodillo;
+        margin-bottom: 2rem;
+    }
+    .card-rodillo{
+        grid-area: card-rodillo;
+        margin-bottom: 2rem;
+    }
+    .card-espatulas{
+        grid-area: card-espatulas;
+        margin-bottom: 2rem;
+    }
+    .card-bandejas{
+        grid-area: card-bandejas;
+        margin-bottom: 2rem;
+    }
+    .card-escaleras{
+        grid-area: card-escaleras;
+        margin-bottom: 2rem;
+    }
+    .card-pintura{
+        grid-area: card-pintura;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: 2rem;
+    }
+}
+.zoom{
+    transition: all 300ms;
+}
+.zoom:hover{
+    transform: scale(1.05);
+}
+.footer-pro{
+    grid-area: footer-pro;
+    background-color: rgb(145, 145, 145);
+    display: grid;
+    grid-template-areas: 
+    "zalazar horarios listado";
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    z-index: 1;
+    .footer-pro__zalazar{
+        grid-area: zalazar;
+        margin-top: 4em;
+        .footer-pro__zalazar--h2{
+            font-size: 1.5em;
+        }
+        .footer-pro__zalazar--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-pro__horario{
+        grid-area: horarios;
+        margin-top: 4em;
+        .footer-pro__horario--h2{
+            font-size: 1.5em;
+        }
+        .footer-pro__horario--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-pro__listado{
+        grid-area: listado;
+        margin-top: 4em;
+        .footer-pro__listado--h2{
+            font-size: 1.5em;
+        }
+        .footer-pro__listado--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+
+    }
+}
+/*PAGE NOSOTROS*/
+#body-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "nav-nos"
+    "header-nos"
+    "section-nos"
+    "footer-nos";
+    grid-template-rows: 5% 15% 67% 13%;
+}
+.nav-nos{
+    position: sticky;
+    top: 0%;
+    grid-area: nav-nos;
+    display: grid;
+    grid-template-areas: 
+    "inicio comunidad productos ayuda registrarme";
+    grid-template-columns: 10% 10% 10% 10% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    opacity: 80%;
+    z-index: 2;
+    .inicio-nos{
+        grid-area: inicio;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .comunidad-nos{
+        grid-area: comunidad;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .productos-nos{
+        grid-area: productos;
+        display: inline;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .ayuda-nos{
+        grid-area: ayuda;
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+    }
+    .registrarme-nos{
+        grid-area: registrarme;
+        display: block;
+        text-decoration: none;
+        margin-left: 40rem;
+        color: white;
+        transition: all 300ms;
+    }    
+
+}
+.nav-nos a:hover{
+    transform: scale(1.2);
+    color: rgb(218, 3, 3);
+}
+.header-nos{
+    grid-area: header-nos;
+    background-image: url(../multimedia/pincel-titulo1.jpeg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgb(167, 98, 86);
+    @keyframes header{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .header-nos__titulo{
+        font-size: 10rem;
+        animation-name: titulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+    }
+    @keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    .header-nos__h2{
+        font-size: 1.5rem;
+        animation-name: subtitulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+
+    }
+    @keyframes subtitulo{
+        0%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+}
+.section-nos{
+    grid-area: section-nos;
+    display: grid;
+    grid-template-areas:
+    "img-nos text-nos ";
+    grid-template-columns: 30% 70%;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 12rem;
+    .text-nos{
+        grid-area: text-nos;
+        padding-bottom: 2rem;
+        border-bottom: solid 1px rgb(218, 3, 3);
+        .h1-nos{
+            text-align: center;
+            color: rgb(218, 3, 3);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            padding-top: 3rem;
+            border-bottom: solid 1px rgb(218, 3, 3);
+        }
+    }
+    .img-nos{
+        grid-area: img-nos;
+        padding-bottom: 2rem;
+        border-bottom: solid 1px rgb(218, 3, 3);
+        .img-dos{
+            margin-top: 4rem;
+            margin-right: 1rem;
+            margin-bottom: 5rem;
+            margin-left: 2rem;
+            box-shadow: 0px 0px 10px black;
+            transition: all 300ms;
+        }
+    } 
+    .img-dos:hover{
+        transform: scale(1.5);
+    }
+}
+.footer-nos{
+    grid-area: footer-nos;
+    background-color: rgb(145, 145, 145);
+    display: grid;
+    grid-template-areas: 
+    "zalazar horarios listado";
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    z-index: 1;
+    .footer-nos__zalazar{
+        grid-area: zalazar;
+        margin-top: 4em;
+        .footer-nos__zalazar--h2{
+            font-size: 1.5em;
+        }
+        .footer-nos__zalazar--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-nos__horario{
+        grid-area: horarios;
+        margin-top: 4em;
+        .footer-nos__horario--h2{
+            font-size: 1.5em;
+        }
+        .footer-nos__horario--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-nos__listado{
+        grid-area: listado;
+        margin-top: 4em;
+        .footer-nos__listado--h2{
+            font-size: 1.5em;
+        }
+        .footer-nos__listado--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+
+    }
+}
+/*PAGE AYUDA*/
+#body-ayuda{
+    display: grid;
+    grid-template-areas: 
+    "nav-ayu"
+    "section-ayu"
+    "footer-ayu";
+    grid-template-rows: 7% 75% 18%;
+}
+.nav-ayu{
+    position: sticky;
+    top: 0%;
+    grid-area: nav-ayu;
+    display: grid;
+    grid-template-areas: 
+    "inicio comunidad productos ayuda registrarme";
+    grid-template-columns: 10% 10% 10% 10% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(217, 240, 255);
+    opacity: 80%;
+    z-index: 2;
+    .inicio-ayu{
+        grid-area: inicio;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .comunidad-ayu{
+        grid-area: comunidad;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .productos-ayu{
+        grid-area: productos;
+        display: inline;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .ayuda-ayu{
+        grid-area: ayuda;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .registrarme-ayu{
+        grid-area: registrarme;
+        display: block;
+        text-decoration: none;
+        margin-left: 40rem;
+        color: black;
+        transition: all 300ms;
+    }    
+}
+.nav-ayu a:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) ;
+}
+.section-ayu{
+    grid-area: section-ayu;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    background-color: rgb(54, 54, 54);
+    .form-ayu{
+        background-color: whitesmoke;
+        border: solid 3px whitesmoke;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 1%;
+        box-shadow: 0px 0px 20px whitesmoke;
+        .titulo-ayu{
+            color: rgb(23, 177, 248);
+            text-align: center;
+            padding-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        .intro-ayu{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .gracias-ayu{
+            color: rgb(23, 177, 248);
+            text-align: center;
+            padding-top: 2rem;
+            font-size: 2rem;
+        }
+        .enviar-ayu{
+        margin-left: 29rem;
+        margin-top: 2rem;
+        }
+        .ajustes-ayu{
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-top: 2rem;
+        }
+    }
+}
+.footer-ayu{
+    grid-area: footer-ayu;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: 
+    "zalazar horarios listado";
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto;
+    text-align: center;
+    box-shadow: 0px 0px 20px whitesmoke;
+    z-index: 1;
+    .footer-ayu__zalazar{
+        grid-area: zalazar;
+        margin-top: 4em;
+        .footer-ayu__zalazar--h2{
+            font-size: 1.5em;
+        }
+        .footer-ayu__zalazar--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-ayu__horario{
+        grid-area: horarios;
+        margin-top: 4em;
+        .footer-ayu__horario--h2{
+            font-size: 1.5em;
+        }
+        .footer-ayu__horario--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-ayu__listado{
+        grid-area: listado;
+        margin-top: 4em;
+        .footer-ayu__listado--h2{
+            font-size: 1.5em;
+        }
+        .footer-ayu__listado--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+
+    }
+}
+/*PAGE REGISTRARME*/
+#body-registrarme{
+    display: grid;
+    grid-template-areas: 
+    "nav-reg"
+    "section-reg"
+    "footer-reg";
+    grid-template-rows: 7% 75% 18%;
+}
+.nav-reg{
+    position: sticky;
+    top: 0%;
+    grid-area: nav-reg;
+    display: grid;
+    grid-template-areas: 
+    "inicio comunidad productos ayuda registrarme";
+    grid-template-columns: 10% 10% 10% 10% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(217, 240, 255);
+    opacity: 80%;
+    z-index: 2;
+    .inicio-reg{
+        grid-area: inicio;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .comunidad-reg{
+        grid-area: comunidad;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .productos-reg{
+        grid-area: productos;
+        display: inline;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .ayuda-reg{
+        grid-area: ayuda;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 300ms;
+    }
+    .registrarme-reg{
+        grid-area: registrarme;
+        display: block;
+        text-decoration: none;
+        margin-left: 40rem;
+        color: black;
+        transition: all 300ms;
+    }    
+}
+.nav-reg a:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) ;
+}
+.section-reg{
+    grid-area: section-reg;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    background-color: rgb(54, 54, 54);
+    .form-reg{
+        background-color: whitesmoke;
+        border: solid 3px whitesmoke;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 1%;
+        box-shadow: 0px 0px 20px whitesmoke;
+        .h1-reg{
+            font-size: 3rem;
+            color: rgb(23, 177, 248);
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+    }
+    .form-dos{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .form-tres{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 27rem;
+    }
+}
+.footer-reg{
+    grid-area: footer-reg;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: 
+    "zalazar horarios listado";
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: auto;
+    text-align: center;
+    box-shadow: 0px 0px 20px whitesmoke;
+    z-index: 1;
+    .footer-reg__zalazar{
+        grid-area: zalazar;
+        margin-top: 4em;
+        .footer-reg__zalazar--h2{
+            font-size: 1.5em;
+        }
+        .footer-reg__zalazar--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-reg__horario{
+        grid-area: horarios;
+        margin-top: 4em;
+        .footer-reg__horario--h2{
+            font-size: 1.5em;
+        }
+        .footer-reg__horario--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+    }
+    .footer-reg__listado{
+        grid-area: listado;
+        margin-top: 4em;
+        .footer-reg__listado--h2{
+            font-size: 1.5em;
+        }
+        .footer-reg__listado--p{
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+
+    }
+}
+/*PAGE ERROR*/
+#body-error{
+    display: grid;
+    grid-template-areas: 
+    "main-error";
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    background-color: rgb(131, 131, 131);
+}
+.main-error{
+    grid-area: main-error;
+    display: grid;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "h3";
+    grid-template-rows: repeat(3, auto);
+    margin-top: 13rem;
+}
+.h1-error{
+    grid-area: h1;
+    font-size: 5rem;
+    text-align: center;
+}
+.h2-error{
+    grid-area: h2;
+    font-size: 2rem;
+    text-align: center;
+}
+.h3-error{
+    grid-area: h3;
+    font-size: 1rem;
+    text-align: center;
+    .a-volver{
+        text-decoration: none;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+}

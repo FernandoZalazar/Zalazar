@@ -24,6 +24,7 @@ $color-href: black;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
+        font-size: 1.8rem;
         transition: all 300ms;
     }
     .comunidad{
@@ -51,7 +52,7 @@ $color-href: black;
     .registrarme{
         display: block;
         text-decoration: none;
-        margin-left: 55rem;
+        margin-left: 2rem;
         color: $color-href;
         transition: all 300ms;
     }    
@@ -374,61 +375,69 @@ $color-href: black;
     "footer-pro";
     grid-template-rows: 5% 15% 65% 15%;
 }
-.nav-pro{
+#nav-pro{
     position: sticky;
     top: 0%;
     grid-area: nav-pro;
-    display: grid;
-    grid-template-areas: 
-    "inicio comunidad productos ayuda registrarme";
-    grid-template-columns: 10% 10% 10% 10% 60%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    background-color: black;
-    opacity: 80%;
     z-index: 2;
     .inicio-pro{
-        grid-area: inicio;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
+        font-size: 1.8rem;
         transition: all 300ms;
     }
     .comunidad-pro{
-        grid-area: comunidad;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .productos-pro{
-        grid-area: productos;
+        position: absolute;
         display: inline;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .ayuda-pro{
-        grid-area: ayuda;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .registrarme-pro{
-        grid-area: registrarme;
         display: block;
         text-decoration: none;
-        margin-left: 40rem;
-        color: white;
+        margin-left: 2rem;
+        color: $color-href;
         transition: all 300ms;
     }    
 
 }
-.nav-pro a:hover{
+.inicio-pro:hover{
     transform: scale(1.2);
-    color: rgb(218, 3, 3);
+    color: rgb(172, 75, 45) !important;
+}
+.productos-pro:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.ayuda-pro:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.comunidad-pro:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.registrarme-pro:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
 }
 .header-pro{
     grid-area: header-pro;
@@ -608,61 +617,69 @@ $color-href: black;
     "footer-nos";
     grid-template-rows: 5% 15% 67% 13%;
 }
-.nav-nos{
+#nav-nos{
     position: sticky;
     top: 0%;
     grid-area: nav-nos;
-    display: grid;
-    grid-template-areas: 
-    "inicio comunidad productos ayuda registrarme";
-    grid-template-columns: 10% 10% 10% 10% 60%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    background-color: black;
-    opacity: 80%;
     z-index: 2;
     .inicio-nos{
-        grid-area: inicio;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
+        font-size: 1.8rem;
         transition: all 300ms;
     }
     .comunidad-nos{
-        grid-area: comunidad;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .productos-nos{
-        grid-area: productos;
+        position: absolute;
         display: inline;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .ayuda-nos{
-        grid-area: ayuda;
         display: block;
         text-decoration: none;
-        color: white;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .registrarme-nos{
-        grid-area: registrarme;
         display: block;
         text-decoration: none;
-        margin-left: 40rem;
-        color: white;
+        margin-left: 2rem;
+        color: $color-href;
         transition: all 300ms;
     }    
 
 }
-.nav-nos a:hover{
+.inicio-nos:hover{
     transform: scale(1.2);
-    color: rgb(218, 3, 3);
+    color: rgb(172, 75, 45) !important;
+}
+.productos-nos:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.ayuda-nos:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.comunidad-nos:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.registrarme-nos:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
 }
 .header-nos{
     grid-area: header-nos;
@@ -817,60 +834,70 @@ $color-href: black;
     "footer-ayu";
     grid-template-rows: 7% 75% 18%;
 }
-.nav-ayu{
+#nav-ayu{
     position: sticky;
     top: 0%;
     grid-area: nav-ayu;
-    display: grid;
-    grid-template-areas: 
-    "inicio comunidad productos ayuda registrarme";
-    grid-template-columns: 10% 10% 10% 10% 60%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(217, 240, 255);
-    opacity: 80%;
     z-index: 2;
+    box-shadow: 0px 0px 10px whitesmoke;
     .inicio-ayu{
-        grid-area: inicio;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
+        font-size: 1.8rem;
         transition: all 300ms;
     }
     .comunidad-ayu{
-        grid-area: comunidad;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .productos-ayu{
-        grid-area: productos;
+        position: absolute;
         display: inline;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .ayuda-ayu{
-        grid-area: ayuda;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .registrarme-ayu{
-        grid-area: registrarme;
         display: block;
         text-decoration: none;
-        margin-left: 40rem;
-        color: black;
+        margin-left: 2rem;
+        color: $color-href;
         transition: all 300ms;
     }    
+
 }
-.nav-ayu a:hover{
+.inicio-ayu:hover{
     transform: scale(1.2);
-    color: rgb(23, 177, 248) ;
+    color: rgb(23, 177, 248) !important;
+}
+.productos-ayu:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.ayuda-ayu:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.comunidad-ayu:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.registrarme-ayu:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
 }
 .section-ayu{
     grid-area: section-ayu;
@@ -885,7 +912,7 @@ $color-href: black;
         padding-top: 2rem;
         padding-bottom: 2rem;
         border-radius: 1%;
-        box-shadow: 0px 0px 20px whitesmoke;
+        box-shadow: 0px 0px 10px whitesmoke;
         .titulo-ayu{
             color: rgb(23, 177, 248);
             text-align: center;
@@ -922,7 +949,7 @@ $color-href: black;
     grid-template-columns: 33% 33% auto;
     grid-template-rows: auto;
     text-align: center;
-    box-shadow: 0px 0px 20px whitesmoke;
+    box-shadow: 0px 0px 10px whitesmoke;
     z-index: 1;
     .footer-ayu__zalazar{
         grid-area: zalazar;
@@ -968,60 +995,70 @@ $color-href: black;
     "footer-reg";
     grid-template-rows: 7% 75% 18%;
 }
-.nav-reg{
+#nav-reg{
     position: sticky;
     top: 0%;
     grid-area: nav-reg;
-    display: grid;
-    grid-template-areas: 
-    "inicio comunidad productos ayuda registrarme";
-    grid-template-columns: 10% 10% 10% 10% 60%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(217, 240, 255);
-    opacity: 80%;
     z-index: 2;
+    box-shadow: 0px 0px 10px whitesmoke;
     .inicio-reg{
-        grid-area: inicio;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
+        font-size: 1.8rem;
         transition: all 300ms;
     }
     .comunidad-reg{
-        grid-area: comunidad;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .productos-reg{
-        grid-area: productos;
+        position: absolute;
         display: inline;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .ayuda-reg{
-        grid-area: ayuda;
         display: block;
         text-decoration: none;
-        color: black;
+        color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .registrarme-reg{
-        grid-area: registrarme;
         display: block;
         text-decoration: none;
-        margin-left: 40rem;
-        color: black;
+        margin-left: 2rem;
+        color: $color-href;
         transition: all 300ms;
     }    
+
 }
-.nav-reg a:hover{
+.inicio-reg:hover{
     transform: scale(1.2);
-    color: rgb(23, 177, 248) ;
+    color: rgb(23, 177, 248) !important;
+}
+.productos-reg:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.ayuda-reg:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.comunidad-reg:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
+}
+.registrarme-reg:hover{
+    transform: scale(1.2);
+    color: rgb(23, 177, 248) !important;
 }
 .section-reg{
     grid-area: section-reg;
@@ -1036,7 +1073,7 @@ $color-href: black;
         padding-top: 2rem;
         padding-bottom: 2rem;
         border-radius: 1%;
-        box-shadow: 0px 0px 20px whitesmoke;
+        box-shadow: 0px 0px 10px whitesmoke;
         .h1-reg{
             font-size: 3rem;
             color: rgb(23, 177, 248);
@@ -1064,7 +1101,7 @@ $color-href: black;
     grid-template-columns: 33% 33% auto;
     grid-template-rows: auto;
     text-align: center;
-    box-shadow: 0px 0px 20px whitesmoke;
+    box-shadow: 0px 0px 10px whitesmoke;
     z-index: 1;
     .footer-reg__zalazar{
         grid-area: zalazar;

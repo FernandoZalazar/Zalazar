@@ -17,6 +17,7 @@
     text-decoration: none;
     color: black;
     margin-left: 2rem;
+    font-size: 1.8rem;
     transition: all 300ms; }
   #nav .comunidad {
     display: block;
@@ -40,7 +41,7 @@
   #nav .registrarme {
     display: block;
     text-decoration: none;
-    margin-left: 55rem;
+    margin-left: 2rem;
     color: black;
     transition: all 300ms; }
 
@@ -308,54 +309,63 @@
   grid-template-areas: "nav-pro" "header-pro" "section-pro" "footer-pro";
   grid-template-rows: 5% 15% 65% 15%; }
 
-.nav-pro {
+#nav-pro {
   position: sticky;
   top: 0%;
   grid-area: nav-pro;
-  display: grid;
-  grid-template-areas: "inicio comunidad productos ayuda registrarme";
-  grid-template-columns: 10% 10% 10% 10% 60%;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  background-color: black;
-  opacity: 80%;
   z-index: 2; }
-  .nav-pro .inicio-pro {
-    grid-area: inicio;
+  #nav-pro .inicio-pro {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
+    font-size: 1.8rem;
     transition: all 300ms; }
-  .nav-pro .comunidad-pro {
-    grid-area: comunidad;
+  #nav-pro .comunidad-pro {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-pro .productos-pro {
-    grid-area: productos;
+  #nav-pro .productos-pro {
+    position: absolute;
     display: inline;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-pro .ayuda-pro {
-    grid-area: ayuda;
+  #nav-pro .ayuda-pro {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-pro .registrarme-pro {
-    grid-area: registrarme;
+  #nav-pro .registrarme-pro {
     display: block;
     text-decoration: none;
-    margin-left: 40rem;
-    color: white;
+    margin-left: 2rem;
+    color: black;
     transition: all 300ms; }
 
-.nav-pro a:hover {
+.inicio-pro:hover {
   transform: scale(1.2);
-  color: #da0303; }
+  color: #ac4b2d !important; }
+
+.productos-pro:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.ayuda-pro:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.comunidad-pro:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.registrarme-pro:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
 
 .header-pro {
   grid-area: header-pro;
@@ -497,54 +507,63 @@
   grid-template-areas: "nav-nos" "header-nos" "section-nos" "footer-nos";
   grid-template-rows: 5% 15% 67% 13%; }
 
-.nav-nos {
+#nav-nos {
   position: sticky;
   top: 0%;
   grid-area: nav-nos;
-  display: grid;
-  grid-template-areas: "inicio comunidad productos ayuda registrarme";
-  grid-template-columns: 10% 10% 10% 10% 60%;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  background-color: black;
-  opacity: 80%;
   z-index: 2; }
-  .nav-nos .inicio-nos {
-    grid-area: inicio;
+  #nav-nos .inicio-nos {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
+    font-size: 1.8rem;
     transition: all 300ms; }
-  .nav-nos .comunidad-nos {
-    grid-area: comunidad;
+  #nav-nos .comunidad-nos {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-nos .productos-nos {
-    grid-area: productos;
+  #nav-nos .productos-nos {
+    position: absolute;
     display: inline;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-nos .ayuda-nos {
-    grid-area: ayuda;
+  #nav-nos .ayuda-nos {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-nos .registrarme-nos {
-    grid-area: registrarme;
+  #nav-nos .registrarme-nos {
     display: block;
     text-decoration: none;
-    margin-left: 40rem;
-    color: white;
+    margin-left: 2rem;
+    color: black;
     transition: all 300ms; }
 
-.nav-nos a:hover {
+.inicio-nos:hover {
   transform: scale(1.2);
-  color: #da0303; }
+  color: #ac4b2d !important; }
+
+.productos-nos:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.ayuda-nos:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.comunidad-nos:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
+
+.registrarme-nos:hover {
+  transform: scale(1.2);
+  color: #ac4b2d !important; }
 
 .header-nos {
   grid-area: header-nos;
@@ -667,54 +686,64 @@
   grid-template-areas: "nav-ayu" "section-ayu" "footer-ayu";
   grid-template-rows: 7% 75% 18%; }
 
-.nav-ayu {
+#nav-ayu {
   position: sticky;
   top: 0%;
   grid-area: nav-ayu;
-  display: grid;
-  grid-template-areas: "inicio comunidad productos ayuda registrarme";
-  grid-template-columns: 10% 10% 10% 10% 60%;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  background-color: #d9f0ff;
-  opacity: 80%;
-  z-index: 2; }
-  .nav-ayu .inicio-ayu {
-    grid-area: inicio;
+  z-index: 2;
+  box-shadow: 0px 0px 10px whitesmoke; }
+  #nav-ayu .inicio-ayu {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
+    font-size: 1.8rem;
     transition: all 300ms; }
-  .nav-ayu .comunidad-ayu {
-    grid-area: comunidad;
+  #nav-ayu .comunidad-ayu {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-ayu .productos-ayu {
-    grid-area: productos;
+  #nav-ayu .productos-ayu {
+    position: absolute;
     display: inline;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-ayu .ayuda-ayu {
-    grid-area: ayuda;
+  #nav-ayu .ayuda-ayu {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-ayu .registrarme-ayu {
-    grid-area: registrarme;
+  #nav-ayu .registrarme-ayu {
     display: block;
     text-decoration: none;
-    margin-left: 40rem;
+    margin-left: 2rem;
     color: black;
     transition: all 300ms; }
 
-.nav-ayu a:hover {
+.inicio-ayu:hover {
   transform: scale(1.2);
-  color: #17b1f8; }
+  color: #17b1f8 !important; }
+
+.productos-ayu:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.ayuda-ayu:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.comunidad-ayu:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.registrarme-ayu:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
 
 .section-ayu {
   grid-area: section-ayu;
@@ -729,7 +758,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-radius: 1%;
-    box-shadow: 0px 0px 20px whitesmoke; }
+    box-shadow: 0px 0px 10px whitesmoke; }
     .section-ayu .form-ayu .titulo-ayu {
       color: #17b1f8;
       text-align: center;
@@ -759,7 +788,7 @@
   grid-template-columns: 33% 33% auto;
   grid-template-rows: auto;
   text-align: center;
-  box-shadow: 0px 0px 20px whitesmoke;
+  box-shadow: 0px 0px 10px whitesmoke;
   z-index: 1; }
   .footer-ayu .footer-ayu__zalazar {
     grid-area: zalazar;
@@ -792,54 +821,64 @@
   grid-template-areas: "nav-reg" "section-reg" "footer-reg";
   grid-template-rows: 7% 75% 18%; }
 
-.nav-reg {
+#nav-reg {
   position: sticky;
   top: 0%;
   grid-area: nav-reg;
-  display: grid;
-  grid-template-areas: "inicio comunidad productos ayuda registrarme";
-  grid-template-columns: 10% 10% 10% 10% 60%;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  background-color: #d9f0ff;
-  opacity: 80%;
-  z-index: 2; }
-  .nav-reg .inicio-reg {
-    grid-area: inicio;
+  z-index: 2;
+  box-shadow: 0px 0px 10px whitesmoke; }
+  #nav-reg .inicio-reg {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
+    font-size: 1.8rem;
     transition: all 300ms; }
-  .nav-reg .comunidad-reg {
-    grid-area: comunidad;
+  #nav-reg .comunidad-reg {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-reg .productos-reg {
-    grid-area: productos;
+  #nav-reg .productos-reg {
+    position: absolute;
     display: inline;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-reg .ayuda-reg {
-    grid-area: ayuda;
+  #nav-reg .ayuda-reg {
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 2rem;
     transition: all 300ms; }
-  .nav-reg .registrarme-reg {
-    grid-area: registrarme;
+  #nav-reg .registrarme-reg {
     display: block;
     text-decoration: none;
-    margin-left: 40rem;
+    margin-left: 2rem;
     color: black;
     transition: all 300ms; }
 
-.nav-reg a:hover {
+.inicio-reg:hover {
   transform: scale(1.2);
-  color: #17b1f8; }
+  color: #17b1f8 !important; }
+
+.productos-reg:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.ayuda-reg:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.comunidad-reg:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
+
+.registrarme-reg:hover {
+  transform: scale(1.2);
+  color: #17b1f8 !important; }
 
 .section-reg {
   grid-area: section-reg;
@@ -854,7 +893,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-radius: 1%;
-    box-shadow: 0px 0px 20px whitesmoke; }
+    box-shadow: 0px 0px 10px whitesmoke; }
     .section-reg .form-reg .h1-reg {
       font-size: 3rem;
       color: #17b1f8;
@@ -877,7 +916,7 @@
   grid-template-columns: 33% 33% auto;
   grid-template-rows: auto;
   text-align: center;
-  box-shadow: 0px 0px 20px whitesmoke;
+  box-shadow: 0px 0px 10px whitesmoke;
   z-index: 1; }
   .footer-reg .footer-reg__zalazar {
     grid-area: zalazar;

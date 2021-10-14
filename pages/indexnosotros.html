@@ -20,25 +20,37 @@
     <title>Nosotros | Zalazar</title>
 </head>
 <body id="body-nosotros">
-    <nav class="nav-nos">
-        <a class="inicio-nos" href="../index.html">Inicio</a>
-        <a class="comunidad-nos" href="./indexnosotros.html">Nosotros</a>
-        <a class="productos-nos" href="./indexproductos.html">Productos</a>
-            <!--
-            <ul class="sub-productos">
-                <li><a href="#">Pinceles</a></li>
-                <li><a href="#">Pinceletas</a></li>
-                <li><a href="#">Lijas</a></li>
-                <li><a href="#">Mini rodillos</a></li>
-                <li><a href="#">Rodillos</a></li>
-                <li><a href="#">Espatulas</a></li>
-                <li><a href="#">Bandejas</a></li>
-                <li><a href="#">Escaleras</a></li>
-            </ul>-->
-           
-        <a class="ayuda-nos" href="./indexayuda.html">Ayuda</a>
-        <a class="registrarme-nos" href="./indexregistrarme.html" >Registrarme</a>
-    </nav>
+    <nav id="nav-nos" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="inicio-nos navbar-brand" href="/index.html">Zalazar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="comunidad-nos nav-link active" aria-current="page" href="/pages/indexnosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="ayuda-nos nav-link active" href="/pages/indexayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="registrarme-nos nav-link active" href="/pages/indexregistrarme.html">Registrarme</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="productos-nos nav-link dropdown-toggle active" href="/pages/indexproductos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../pages/indexproductos.html">Pinceles</a></li>
+                  <li><a class="dropdown-item" href="../pages/indexproductos.html">Lijas</a></li>
+                  <li><a class="dropdown-item" href="../pages/indexproductos.html">Rodillos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <header class="header-nos">
         <h1 class="header-nos__titulo">Nosotros</h1>
         <h2 class="header-nos__h2">Lo que usted necesita para trabajar como un profesional</h2>

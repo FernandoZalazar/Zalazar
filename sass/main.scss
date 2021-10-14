@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
 }
-$color-href: white;
+$color-href: black;
 
 
 #body{
@@ -14,61 +14,68 @@ $color-href: white;
     "footer";
     grid-template-rows: 5% 15% 65% 15%;
 }
-.nav{
+#nav{
     position: sticky;
     top: 0%;
     grid-area: nav;
-    display: grid;
-    grid-template-areas: 
-    "inicio comunidad productos ayuda registrarme";
-    grid-template-columns: 10% 10% 10% 10% 60%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    background-color: black;
-    opacity: 80%;
     z-index: 2;
     .inicio{
-        grid-area: inicio;
         display: block;
         text-decoration: none;
         color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .comunidad{
-        grid-area: comunidad;
         display: block;
         text-decoration: none;
         color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .productos{
-        grid-area: productos;
+        position: absolute;
         display: inline;
         text-decoration: none;
         color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .ayuda{
-        grid-area: ayuda;
         display: block;
         text-decoration: none;
         color: $color-href;
+        margin-left: 2rem;
         transition: all 300ms;
     }
     .registrarme{
-        grid-area: registrarme;
         display: block;
         text-decoration: none;
-        margin-left: 40rem;
+        margin-left: 55rem;
         color: $color-href;
         transition: all 300ms;
     }    
 
 }
-.nav a:hover{
+.inicio:hover{
     transform: scale(1.2);
-    color: rgb(218, 3, 3);
+    color: rgb(172, 75, 45) !important;
+}
+.productos:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.ayuda:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.comunidad:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
+}
+.registrarme:hover{
+    transform: scale(1.2);
+    color: rgb(172, 75, 45) !important;
 }
 .header{
     grid-area: header;

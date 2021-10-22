@@ -3,7 +3,9 @@
     padding: 0%;
 }
 $color-href: black;
-
+$color-apps: rgba(245, 49, 0, 0.774);
+$color-ayunos: rgb(23, 177, 248);
+$color-card: rgb(119, 51, 31);
 
 #body{
     display: grid;
@@ -14,6 +16,7 @@ $color-href: black;
     "footer";
     grid-template-rows: 5% 15% 65% 15%;
 }
+
 #nav{
     position: sticky;
     top: 0%;
@@ -35,8 +38,6 @@ $color-href: black;
         transition: all 300ms;
     }
     .productos{
-        position: absolute;
-        display: inline;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
@@ -140,83 +141,47 @@ $color-href: black;
 }
 .apps{
     z-index: 2;
-    .apps__facebook-oficial {
-        background-image: url(../multimedia/facebook1.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
+    .apps__facebook-oficial {    
         position: fixed;
         top: 20%;
         left: 93%;
         transition: all 300ms;
+        color: $color-apps;
     }
     .apps__insta-oficial{
-        background-image: url(../multimedia/instagram.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
         position: fixed;
         top: 31%;
         left: 93%;
         transition: all 300ms;
+        color:$color-apps;
     }
     .apps__tw-oficial{
-        background-image: url(../multimedia/twitter.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
         position: fixed;
         top: 42%;
         left: 93%;
         transition: all 300ms;
+        color: $color-apps;
     }
     .apps__wpp-oficial{
-        background-image: url(../multimedia/whastapp.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
         position: fixed;
         top: 53%;
         left: 93%;
         transition: all 300ms;
+        color: $color-apps;
     }
     .apps__mail-oficial{
-        background-image: url(../multimedia/logogmail.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
         position: fixed;
         top: 64%;
         left: 93%;
         transition: all 300ms;
+        color: $color-apps;
     }
     .apps__ubi-oficial{
-        background-image: url(../multimedia/googlemaps-logo.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 10px black;
-        border-radius: 100%;
-        padding: 1.3rem;
         position: fixed;
         top: 75%;
         left: 93%;
         transition: all 300ms;
+        color: $color-apps;
     }
 }
 .apps a:hover{
@@ -231,7 +196,7 @@ $color-href: black;
     "consejos consejos consejos";
     grid-template-columns: 33% 33% 34%;
     grid-template-rows: 35% 33% 32%;
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(252, 223, 185, 0.274);
     padding-bottom: 2rem;
     z-index: 0;
     .lija{
@@ -240,7 +205,7 @@ $color-href: black;
         align-self: center;
         transition: all 300ms;
         .lija-dos{
-            background-color: rgb(34, 34, 34);
+            background-color: $color-card;
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
@@ -252,7 +217,7 @@ $color-href: black;
         align-self: center;
         transition: all 300ms;
         .pincel-dos{
-            background-color: rgb(34, 34, 34);
+            background-color: $color-card;
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
@@ -264,7 +229,7 @@ $color-href: black;
         align-self: center;
         transition: all 300ms;
         .rodillo-dos{
-            background-color: rgb(34, 34, 34);
+            background-color: $color-card;
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
@@ -279,7 +244,6 @@ $color-href: black;
         margin-left: 0rem;
         margin-right: 0rem;
     }
-    
     .consejos{
         grid-area: consejos;
         margin-top: 3rem;
@@ -293,14 +257,13 @@ $color-href: black;
             border-top: solid 1px rgb(117, 117, 117);
             padding-top: 3rem;
         }
-        .consejos-ul{
-            margin-left: 14rem;
-            margin-right: 16rem;
-        }
+        
         .consejos-li{
             border-bottom: solid 1px rgb(117, 117, 117);
             margin-bottom: 0.5rem;
             list-style: none;
+            margin-left: 3rem;
+            margin-right: 5rem;
         }
         .consejos-a{
             text-decoration: none;
@@ -321,18 +284,19 @@ $color-href: black;
 }
 .footer{
     grid-area: footer;
-    background-color: rgb(145, 145, 145);
+    background-color: rgba(0, 0, 0, 0.89);
     display: grid;
     grid-template-areas: 
     "zalazar horarios listado";
     grid-template-columns: 33% 33% auto;
     grid-template-rows: auto;
     text-align: center;
-    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    box-shadow: 0px 0px 10px black;
     z-index: 1;
     .footer__zalazar{
         grid-area: zalazar;
         margin-top: 4em;
+        color: white;
         .footer__zalazar--h2{
             font-size: 1.5em;
         }
@@ -344,6 +308,7 @@ $color-href: black;
     .footer__horario{
         grid-area: horarios;
         margin-top: 4em;
+        color: white;
         .footer__horario--h2{
             font-size: 1.5em;
         }
@@ -355,6 +320,7 @@ $color-href: black;
     .footer__listado{
         grid-area: listado;
         margin-top: 4em;
+        color: white;
         .footer__listado--h2{
             font-size: 1.5em;
         }
@@ -899,6 +865,54 @@ $color-href: black;
     transform: scale(1.2);
     color: rgb(23, 177, 248) !important;
 }
+.apps-ayu{
+    z-index: 2;
+    .apps-ayu__facebook-oficial {    
+        position: fixed;
+        top: 20%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-ayu__insta-oficial{
+        position: fixed;
+        top: 31%;
+        left: 93%;
+        transition: all 300ms;
+        color:$color-ayunos;
+    }
+    .apps-ayu__tw-oficial{
+        position: fixed;
+        top: 42%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-ayu__wpp-oficial{
+        position: fixed;
+        top: 53%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-ayu__mail-oficial{
+        position: fixed;
+        top: 64%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-ayu__ubi-oficial{
+        position: fixed;
+        top: 75%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+}
+.apps-ayu a:hover{
+    transform: scale(1.2);
+}
 .section-ayu{
     grid-area: section-ayu;
     padding-top: 10rem;
@@ -1060,6 +1074,54 @@ $color-href: black;
     transform: scale(1.2);
     color: rgb(23, 177, 248) !important;
 }
+.apps-reg{
+    z-index: 2;
+    .apps-reg__facebook-oficial {    
+        position: fixed;
+        top: 20%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-reg__insta-oficial{
+        position: fixed;
+        top: 31%;
+        left: 93%;
+        transition: all 300ms;
+        color:$color-ayunos;
+    }
+    .apps-reg__tw-oficial{
+        position: fixed;
+        top: 42%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-reg__wpp-oficial{
+        position: fixed;
+        top: 53%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-reg__mail-oficial{
+        position: fixed;
+        top: 64%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+    .apps-reg__ubi-oficial{
+        position: fixed;
+        top: 75%;
+        left: 93%;
+        transition: all 300ms;
+        color: $color-ayunos;
+    }
+}
+.apps-reg a:hover{
+    transform: scale(1.2);
+}
 .section-reg{
     grid-area: section-reg;
     padding-top: 10rem;
@@ -1176,4 +1238,23 @@ $color-href: black;
         font-size: 1rem;
         padding-left: 0.5rem;
     }
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 320px){
+    .header{
+        background-image: none;
+    }
+    
+}
+@media only screen and (max-width: 480px){
+    
+}
+@media only screen and (max-width: 600px){
+    
+}
+@media only screen and (max-width: 768px){
+    
+}
+@media only screen and (max-width: 1024px){
+    
 }

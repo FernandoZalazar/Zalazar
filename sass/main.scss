@@ -6,21 +6,9 @@ $color-href: black;
 $color-apps: rgba(245, 49, 0, 0.774);
 $color-ayunos: rgb(23, 177, 248);
 $color-card: rgb(119, 51, 31);
-
-#body{
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "section"
-    "footer";
-    grid-template-rows: 5% 15% 65% 15%;
-}
-
 #nav{
     position: sticky;
     top: 0%;
-    grid-area: nav;
     z-index: 2;
     .inicio{
         display: block;
@@ -29,6 +17,7 @@ $color-card: rgb(119, 51, 31);
         margin-left: 2rem;
         font-size: 1.8rem;
         transition: all 300ms;
+        font-family: 'Permanent Marker', cursive;
     }
     .comunidad{
         display: block;
@@ -80,11 +69,12 @@ $color-card: rgb(119, 51, 31);
     color: rgb(172, 75, 45) !important;
 }
 .header{
-    grid-area: header;
     background-image: url(../multimedia/pincel-titulo1.jpeg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
     text-align: center;
     animation-name: header;
     animation-duration: 2s;
@@ -101,7 +91,7 @@ $color-card: rgb(119, 51, 31);
         }
     }
     .header__titulo{
-        font-size: 10rem;
+        font-family: 'Permanent Marker', cursive;
         animation-name: titulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -119,12 +109,10 @@ $color-card: rgb(119, 51, 31);
     }
 }
     .header__h2{
-        font-size: 1.5rem;
         animation-name: subtitulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
         animation-delay: 0s;
-
     }
     @keyframes subtitulo{
         0%{
@@ -139,56 +127,10 @@ $color-card: rgb(119, 51, 31);
     }
     
 }
-.apps{
-    z-index: 2;
-    .apps__facebook-oficial {    
-        position: fixed;
-        top: 20%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-apps;
-    }
-    .apps__insta-oficial{
-        position: fixed;
-        top: 31%;
-        left: 93%;
-        transition: all 300ms;
-        color:$color-apps;
-    }
-    .apps__tw-oficial{
-        position: fixed;
-        top: 42%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-apps;
-    }
-    .apps__wpp-oficial{
-        position: fixed;
-        top: 53%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-apps;
-    }
-    .apps__mail-oficial{
-        position: fixed;
-        top: 64%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-apps;
-    }
-    .apps__ubi-oficial{
-        position: fixed;
-        top: 75%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-apps;
-    }
-}
 .apps a:hover{
     transform: scale(1.2);
 }
 .section{
-    grid-area: section;
     display: grid;
     grid-template-areas:
     "lija pincel rodillo"
@@ -209,6 +151,14 @@ $color-card: rgb(119, 51, 31);
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
+            .img-lija{
+                background-image: url(../multimedia/lijas.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 10rem;
+                width: 14.9rem;
+            }
         }
     }
     .pincel{
@@ -221,6 +171,14 @@ $color-card: rgb(119, 51, 31);
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
+            .img-pincel{
+                background-image: url(../multimedia/pincel.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 10rem;
+                width: 14.9rem;
+            }
         }
     }
     .rodillo{
@@ -233,45 +191,61 @@ $color-card: rgb(119, 51, 31);
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
+            .img-rodillo{
+                background-image: url(../multimedia/rodillos.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 10rem;
+                width: 14.9rem;
+            }
         }
     }
     .carrusel{
         grid-area: carrusel;
-    }
-    .row{
-        margin-top: 0rem;
-        margin-bottom: 20rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
+        .row{
+            margin-left: 0rem;
+            margin-right: 0rem;
+            .img-car-lija{
+                background-image: url(../multimedia/lijas.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 22rem;
+                width: 35rem;
+            }
+            .img-car-rodillo{
+                background-image: url(../multimedia/rodillo-epic.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 22rem;
+                width: 35rem;
+            }
+            .img-car-pincel{
+                background-image: url(../multimedia/pincel.jpeg);
+                background-repeat: none;
+                background-position: center;
+                background-size: cover;
+                height: 22rem;
+                width: 35rem;
+            }
+        }
     }
     .consejos{
         grid-area: consejos;
         margin-top: 3rem;
-        margin-bottom: 7rem;
         .consejos-h1{
             text-align: center;
             opacity: 80%;
             padding-bottom: 2rem;
         }
-        .consejos-borde{
-            border-top: solid 1px rgb(117, 117, 117);
-            padding-top: 3rem;
-        }
-        
         .consejos-li{
             border-bottom: solid 1px rgb(117, 117, 117);
             margin-bottom: 0.5rem;
             list-style: none;
-            margin-left: 3rem;
-            margin-right: 5rem;
         }
-        .consejos-a{
-            text-decoration: none;
-            padding-left: 1rem;
-        }
-        
     }
-
 }
 .lija:hover{
     transform: scale(1.05);
@@ -282,69 +256,10 @@ $color-card: rgb(119, 51, 31);
 .rodillo:hover{
     transform: scale(1.05);
 }
-.footer{
-    grid-area: footer;
-    background-color: rgba(0, 0, 0, 0.89);
-    display: grid;
-    grid-template-areas: 
-    "zalazar horarios listado";
-    grid-template-columns: 33% 33% auto;
-    grid-template-rows: auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px black;
-    z-index: 1;
-    .footer__zalazar{
-        grid-area: zalazar;
-        margin-top: 4em;
-        color: white;
-        .footer__zalazar--h2{
-            font-size: 1.5em;
-        }
-        .footer__zalazar--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer__horario{
-        grid-area: horarios;
-        margin-top: 4em;
-        color: white;
-        .footer__horario--h2{
-            font-size: 1.5em;
-        }
-        .footer__horario--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer__listado{
-        grid-area: listado;
-        margin-top: 4em;
-        color: white;
-        .footer__listado--h2{
-            font-size: 1.5em;
-        }
-        .footer__listado--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-
-    }
-}
 /*PAGE PRODUCTOS*/
-#body-productos{
-    display: grid;
-    grid-template-areas: 
-    "nav-pro"
-    "header-pro"
-    "section-pro"
-    "footer-pro";
-    grid-template-rows: 5% 15% 65% 15%;
-}
 #nav-pro{
     position: sticky;
     top: 0%;
-    grid-area: nav-pro;
     z-index: 2;
     .inicio-pro{
         display: block;
@@ -353,6 +268,7 @@ $color-card: rgb(119, 51, 31);
         margin-left: 2rem;
         font-size: 1.8rem;
         transition: all 300ms;
+        font-family: 'Permanent Marker', cursive;
     }
     .comunidad-pro{
         display: block;
@@ -406,7 +322,6 @@ $color-card: rgb(119, 51, 31);
     color: rgb(172, 75, 45) !important;
 }
 .header-pro{
-    grid-area: header-pro;
     background-image: url(../multimedia/pincel-titulo1.jpeg);
     background-repeat: none;
     background-position: center;
@@ -427,7 +342,7 @@ $color-card: rgb(119, 51, 31);
         }
     }
     .header-pro__titulo{
-        font-size: 10rem;
+        font-family: 'Permanent Marker', cursive;
         animation-name: titulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -445,7 +360,6 @@ $color-card: rgb(119, 51, 31);
     }
 }
     .header-pro__h2{
-        font-size: 1.5rem;
         animation-name: subtitulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -466,14 +380,13 @@ $color-card: rgb(119, 51, 31);
     
 }
 .section-pro{
-    grid-area: section-pro;
     display: grid;
     grid-template-areas:
     "card-pinceles card-lijas card-minirodillo card-rodillo "
     "card-espatulas card-pintura card-bandejas card-escaleras ";
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(252, 223, 185, 0.274);
     padding-top: 2rem;
     padding-left: 4rem;
     padding-right: 2rem;
@@ -483,7 +396,7 @@ $color-card: rgb(119, 51, 31);
         margin-bottom: 2rem;
     }
     .estilo{
-            background-color: rgb(34, 34, 34);
+            background-color: $color-card;
             border-radius: 1%;
             box-shadow: 0px 0px 10px black;
             color: white;
@@ -527,66 +440,10 @@ $color-card: rgb(119, 51, 31);
 .zoom:hover{
     transform: scale(1.05);
 }
-.footer-pro{
-    grid-area: footer-pro;
-    background-color: rgb(145, 145, 145);
-    display: grid;
-    grid-template-areas: 
-    "zalazar horarios listado";
-    grid-template-columns: 33% 33% auto;
-    grid-template-rows: auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgb(95, 95, 95);
-    z-index: 1;
-    .footer-pro__zalazar{
-        grid-area: zalazar;
-        margin-top: 4em;
-        .footer-pro__zalazar--h2{
-            font-size: 1.5em;
-        }
-        .footer-pro__zalazar--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-pro__horario{
-        grid-area: horarios;
-        margin-top: 4em;
-        .footer-pro__horario--h2{
-            font-size: 1.5em;
-        }
-        .footer-pro__horario--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-pro__listado{
-        grid-area: listado;
-        margin-top: 4em;
-        .footer-pro__listado--h2{
-            font-size: 1.5em;
-        }
-        .footer-pro__listado--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-
-    }
-}
 /*PAGE NOSOTROS*/
-#body-nosotros{
-    display: grid;
-    grid-template-areas: 
-    "nav-nos"
-    "header-nos"
-    "section-nos"
-    "footer-nos";
-    grid-template-rows: 5% 15% 67% 13%;
-}
 #nav-nos{
     position: sticky;
     top: 0%;
-    grid-area: nav-nos;
     z-index: 2;
     .inicio-nos{
         display: block;
@@ -595,6 +452,7 @@ $color-card: rgb(119, 51, 31);
         margin-left: 2rem;
         font-size: 1.8rem;
         transition: all 300ms;
+        font-family: 'Permanent Marker', cursive;
     }
     .comunidad-nos{
         display: block;
@@ -648,7 +506,6 @@ $color-card: rgb(119, 51, 31);
     color: rgb(172, 75, 45) !important;
 }
 .header-nos{
-    grid-area: header-nos;
     background-image: url(../multimedia/pincel-titulo1.jpeg);
     background-repeat: none;
     background-position: center;
@@ -669,11 +526,11 @@ $color-card: rgb(119, 51, 31);
         }
     }
     .header-nos__titulo{
-        font-size: 10rem;
         animation-name: titulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
         animation-delay: 0s;
+        font-family: 'Permanent Marker', cursive;
     }
     @keyframes titulo{
     0%{
@@ -687,7 +544,6 @@ $color-card: rgb(119, 51, 31);
     }
 }
     .header-nos__h2{
-        font-size: 1.5rem;
         animation-name: subtitulo;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -707,103 +563,10 @@ $color-card: rgb(119, 51, 31);
     }
     
 }
-.section-nos{
-    grid-area: section-nos;
-    display: grid;
-    grid-template-areas:
-    "img-nos text-nos ";
-    grid-template-columns: 30% 70%;
-    background-color: rgb(241, 241, 241);
-    padding-bottom: 12rem;
-    .text-nos{
-        grid-area: text-nos;
-        padding-bottom: 2rem;
-        border-bottom: solid 1px rgb(218, 3, 3);
-        .h1-nos{
-            text-align: center;
-            color: rgb(218, 3, 3);
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            padding-top: 3rem;
-            border-bottom: solid 1px rgb(218, 3, 3);
-        }
-    }
-    .img-nos{
-        grid-area: img-nos;
-        padding-bottom: 2rem;
-        border-bottom: solid 1px rgb(218, 3, 3);
-        .img-dos{
-            margin-top: 4rem;
-            margin-right: 1rem;
-            margin-bottom: 5rem;
-            margin-left: 2rem;
-            box-shadow: 0px 0px 10px black;
-            transition: all 300ms;
-        }
-    } 
-    .img-dos:hover{
-        transform: scale(1.5);
-    }
-}
-.footer-nos{
-    grid-area: footer-nos;
-    background-color: rgb(145, 145, 145);
-    display: grid;
-    grid-template-areas: 
-    "zalazar horarios listado";
-    grid-template-columns: 33% 33% auto;
-    grid-template-rows: auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgb(95, 95, 95);
-    z-index: 1;
-    .footer-nos__zalazar{
-        grid-area: zalazar;
-        margin-top: 4em;
-        .footer-nos__zalazar--h2{
-            font-size: 1.5em;
-        }
-        .footer-nos__zalazar--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-nos__horario{
-        grid-area: horarios;
-        margin-top: 4em;
-        .footer-nos__horario--h2{
-            font-size: 1.5em;
-        }
-        .footer-nos__horario--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-nos__listado{
-        grid-area: listado;
-        margin-top: 4em;
-        .footer-nos__listado--h2{
-            font-size: 1.5em;
-        }
-        .footer-nos__listado--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-
-    }
-}
 /*PAGE AYUDA*/
-#body-ayuda{
-    display: grid;
-    grid-template-areas: 
-    "nav-ayu"
-    "section-ayu"
-    "footer-ayu";
-    grid-template-rows: 7% 75% 18%;
-}
 #nav-ayu{
     position: sticky;
     top: 0%;
-    grid-area: nav-ayu;
     z-index: 2;
     box-shadow: 0px 0px 10px whitesmoke;
     .inicio-ayu{
@@ -813,6 +576,7 @@ $color-card: rgb(119, 51, 31);
         margin-left: 2rem;
         font-size: 1.8rem;
         transition: all 300ms;
+        font-family: 'Permanent Marker', cursive;
     }
     .comunidad-ayu{
         display: block;
@@ -865,154 +629,13 @@ $color-card: rgb(119, 51, 31);
     transform: scale(1.2);
     color: rgb(23, 177, 248) !important;
 }
-.apps-ayu{
-    z-index: 2;
-    .apps-ayu__facebook-oficial {    
-        position: fixed;
-        top: 20%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-ayu__insta-oficial{
-        position: fixed;
-        top: 31%;
-        left: 93%;
-        transition: all 300ms;
-        color:$color-ayunos;
-    }
-    .apps-ayu__tw-oficial{
-        position: fixed;
-        top: 42%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-ayu__wpp-oficial{
-        position: fixed;
-        top: 53%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-ayu__mail-oficial{
-        position: fixed;
-        top: 64%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-ayu__ubi-oficial{
-        position: fixed;
-        top: 75%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-}
 .apps-ayu a:hover{
     transform: scale(1.2);
 }
-.section-ayu{
-    grid-area: section-ayu;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
-    background-color: rgb(54, 54, 54);
-    .form-ayu{
-        background-color: whitesmoke;
-        border: solid 3px whitesmoke;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        border-radius: 1%;
-        box-shadow: 0px 0px 10px whitesmoke;
-        .titulo-ayu{
-            color: rgb(23, 177, 248);
-            text-align: center;
-            padding-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-        .intro-ayu{
-            font-size: 1rem;
-            text-align: center;
-        }
-        .gracias-ayu{
-            color: rgb(23, 177, 248);
-            text-align: center;
-            padding-top: 2rem;
-            font-size: 2rem;
-        }
-        .enviar-ayu{
-        margin-left: 29rem;
-        margin-top: 2rem;
-        }
-        .ajustes-ayu{
-            margin-left: 5rem;
-            margin-right: 5rem;
-            margin-top: 2rem;
-        }
-    }
-}
-.footer-ayu{
-    grid-area: footer-ayu;
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-areas: 
-    "zalazar horarios listado";
-    grid-template-columns: 33% 33% auto;
-    grid-template-rows: auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px whitesmoke;
-    z-index: 1;
-    .footer-ayu__zalazar{
-        grid-area: zalazar;
-        margin-top: 4em;
-        .footer-ayu__zalazar--h2{
-            font-size: 1.5em;
-        }
-        .footer-ayu__zalazar--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-ayu__horario{
-        grid-area: horarios;
-        margin-top: 4em;
-        .footer-ayu__horario--h2{
-            font-size: 1.5em;
-        }
-        .footer-ayu__horario--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-ayu__listado{
-        grid-area: listado;
-        margin-top: 4em;
-        .footer-ayu__listado--h2{
-            font-size: 1.5em;
-        }
-        .footer-ayu__listado--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-
-    }
-}
 /*PAGE REGISTRARME*/
-#body-registrarme{
-    display: grid;
-    grid-template-areas: 
-    "nav-reg"
-    "section-reg"
-    "footer-reg";
-    grid-template-rows: 7% 75% 18%;
-}
 #nav-reg{
     position: sticky;
     top: 0%;
-    grid-area: nav-reg;
     z-index: 2;
     box-shadow: 0px 0px 10px whitesmoke;
     .inicio-reg{
@@ -1022,6 +645,7 @@ $color-card: rgb(119, 51, 31);
         margin-left: 2rem;
         font-size: 1.8rem;
         transition: all 300ms;
+        font-family: 'Permanent Marker', cursive;
     }
     .comunidad-reg{
         display: block;
@@ -1074,131 +698,8 @@ $color-card: rgb(119, 51, 31);
     transform: scale(1.2);
     color: rgb(23, 177, 248) !important;
 }
-.apps-reg{
-    z-index: 2;
-    .apps-reg__facebook-oficial {    
-        position: fixed;
-        top: 20%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-reg__insta-oficial{
-        position: fixed;
-        top: 31%;
-        left: 93%;
-        transition: all 300ms;
-        color:$color-ayunos;
-    }
-    .apps-reg__tw-oficial{
-        position: fixed;
-        top: 42%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-reg__wpp-oficial{
-        position: fixed;
-        top: 53%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-reg__mail-oficial{
-        position: fixed;
-        top: 64%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-    .apps-reg__ubi-oficial{
-        position: fixed;
-        top: 75%;
-        left: 93%;
-        transition: all 300ms;
-        color: $color-ayunos;
-    }
-}
 .apps-reg a:hover{
     transform: scale(1.2);
-}
-.section-reg{
-    grid-area: section-reg;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
-    background-color: rgb(54, 54, 54);
-    .form-reg{
-        background-color: whitesmoke;
-        border: solid 3px whitesmoke;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        border-radius: 1%;
-        box-shadow: 0px 0px 10px whitesmoke;
-        .h1-reg{
-            font-size: 3rem;
-            color: rgb(23, 177, 248);
-            text-align: center;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-    }
-    .form-dos{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .form-tres{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 27rem;
-    }
-}
-.footer-reg{
-    grid-area: footer-reg;
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-areas: 
-    "zalazar horarios listado";
-    grid-template-columns: 33% 33% auto;
-    grid-template-rows: auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px whitesmoke;
-    z-index: 1;
-    .footer-reg__zalazar{
-        grid-area: zalazar;
-        margin-top: 4em;
-        .footer-reg__zalazar--h2{
-            font-size: 1.5em;
-        }
-        .footer-reg__zalazar--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-reg__horario{
-        grid-area: horarios;
-        margin-top: 4em;
-        .footer-reg__horario--h2{
-            font-size: 1.5em;
-        }
-        .footer-reg__horario--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-    }
-    .footer-reg__listado{
-        grid-area: listado;
-        margin-top: 4em;
-        .footer-reg__listado--h2{
-            font-size: 1.5em;
-        }
-        .footer-reg__listado--p{
-            padding-top: 0.5rem;
-            font-size: 1em;
-        }
-
-    }
 }
 /*PAGE ERROR*/
 #body-error{
@@ -1240,21 +741,1216 @@ $color-card: rgb(119, 51, 31);
     }
 }
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 320px){
-    .header{
-        background-image: none;
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .header__titulo{
+        font-size: 4rem;
     }
+    .header__h2{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .section{
+        display: grid;
+        grid-template-areas:
+        "lija lija lija"
+        "pincel pincel pincel"
+        "rodillo rodillo rodillo"
+        "carrusel carrusel carrusel"
+        ". consejos .";
+        grid-template-rows: 22% 22% 22% 17% 17%;
+        grid-template-columns: repeat(3, auto);
+        background-color: rgba(252, 223, 185, 0.274);
+        padding-bottom: 2rem;
+        z-index: 0;
+        .lija{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .pincel{
+            margin-bottom: 2rem;
+        }
+        .rodillo{
+            margin-bottom: 2rem;
+        }
+    }
+    .carrusel{
+        grid-area: carrusel;
+        .row{
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+    }
+    .consejos{
+        grid-area: consejos;
+        margin-top: 2rem;
+        margin-bottom: 20rem;
+        .consejos-h1{
+            text-align: center;
+            opacity: 80%;
+            border-top: solid 1px rgb(117, 117, 117);
+            padding-top: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .consejos-ul{
+            padding-left: 0rem;
+            text-align: center;
+        }
+        .consejos-li{
+            display: inline-block;
+            border-bottom: solid 1px rgb(117, 117, 117);
+            margin-bottom: 0.5rem;
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+        }
+        .consejos-a{
+            text-decoration: none;
+            padding-left: 0.2rem;
+        }
+    }
+    .apps{
+        z-index: 2;
+        .apps__facebook-oficial {    
+            position: fixed;
+            top: 94%;
+            left: 2%;
+            transition: all 300ms;
+            color: $color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps__insta-oficial{
+            position: fixed;
+            top: 94%;
+            left: 21%;
+            transition: all 300ms;
+            color:$color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps__tw-oficial{
+            position: fixed;
+            top: 94%;
+            left: 38%;
+            transition: all 300ms;
+            color: $color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps__wpp-oficial{
+            position: fixed;
+            top: 94%;
+            left: 55%;
+            transition: all 300ms;
+            color: $color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps__mail-oficial{
+            position: fixed;
+            top: 94%;
+            left: 73%;
+            transition: all 300ms;
+            color: $color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps__ubi-oficial{
+            position: fixed;
+            top: 94%;
+            left: 89%;
+            transition: all 300ms;
+            color: $color-apps;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+    }
+    .footer{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar zalazar zalazar"
+        "horarios horarios horarios"
+        "listado listado listado";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        box-shadow: 0px 0px 30px $color-card;
+        z-index: 1;
+        .footer__zalazar{
+            grid-area: zalazar;
+            margin-top: 1rem;
+            color: white;
+            .footer__zalazar--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer__horario{
+            grid-area: horarios;
+            margin-top: 1rem;
+            color: white;
+            .footer__horario--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer__listado{
+            grid-area: listado;
+            margin-top: 1rem;
+            color: white;
+            .footer__listado--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
     
+        }
+    }
+    /*PRO*/
+    .header-pro__titulo{
+        font-size: 3rem;
+    }
+    .header-pro__h2{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .section-pro{
+        display: grid;
+        grid-template-areas:
+        "card-pinceles card-pinceles card-pinceles card-pinceles"
+        "card-lijas card-lijas card-lijas card-lijas"
+        "card-minirodillo card-minirodillo card-minirodillo card-minirodillo"
+        "card-rodillo card-rodillo card-rodillo card-rodillo"
+        "card-espatulas card-espatulas card-espatulas card-espatulas"
+        "card-pintura card-pintura card-pintura card-pintura"
+        "card-bandejas card-bandejas card-bandejas card-bandejas"
+        "card-escaleras card-escaleras card-escaleras card-escaleras";
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(8, auto);
+        background-color: rgba(252, 223, 185, 0.274);
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+    .footer-pro{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar zalazar zalazar" 
+        "horarios horarios horarios"
+        "listado listado listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px $color-card;
+        z-index: 1;
+        .footer-pro__zalazar{
+            grid-area: zalazar;
+            margin-top: 1rem;
+            color: white;
+            .footer-pro__zalazar--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-pro__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-pro__horario{
+            grid-area: horarios;
+            margin-top: 1rem;
+            color: white;
+            .footer-pro__horario--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-pro__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-pro__listado{
+            grid-area: listado;
+            margin-top: 1rem;
+            color: white;
+            .footer-pro__listado--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-pro__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+    
+        }
+    }
+    /*NOS*/
+    .header-nos__titulo{
+        font-size: 3rem;
+    }
+    .header-nos__h2{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .section-nos{
+        display: grid;
+        grid-template-areas:
+        "text-nos"
+        "img-nos";
+        grid-template-columns: 100%;
+        grid-template-rows: 76% 24%;
+        background-color: rgba(252, 223, 185, 0.274);
+        .text-nos{
+            grid-area: text-nos;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            .h1-nos{
+                text-align: center;
+                color: rgb(218, 3, 3);
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                padding-top: 2rem;
+                border-bottom: solid 1px rgb(218, 3, 3);
+            }
+        }
+        .img-nos{
+            grid-area: img-nos;
+            margin: 0.5rem;
+            .img-dos{
+                box-shadow: 0px 0px 10px black;
+                transition: all 300ms;
+            }
+        } 
+        .img-dos:hover{
+            transform: scale(1.5);
+        }
+    }
+    .footer-nos{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar"
+        "horarios"
+        "listado";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        text-align: center;
+        box-shadow: 0px 0px 10px $color-card;
+        z-index: 1;
+        .footer-nos__zalazar{
+            grid-area: zalazar;
+            margin-top: 2rem;
+            color: white;
+            .footer-nos__zalazar--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-nos__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-nos__horario{
+            grid-area: horarios;
+
+            color: white;
+            .footer-nos__horario--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-nos__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-nos__listado{
+            grid-area: listado;
+
+            color: white;
+            .footer-nos__listado--h2{
+                display: inline;
+                font-size: 1.5rem;
+                border-top: 1px solid white;
+            }
+            .footer-nos__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+    
+        }
+    }
+    /*AYU*/
+    .apps-ayu{
+        z-index: 2;
+        .apps-ayu__facebook-oficial {    
+            position: fixed;
+            top: 94%;
+            left: 2%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-ayu__insta-oficial{
+            position: fixed;
+            top: 94%;
+            left: 21%;
+            transition: all 300ms;
+            color:$color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-ayu__tw-oficial{
+            position: fixed;
+            top: 94%;
+            left: 38%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-ayu__wpp-oficial{
+            position: fixed;
+            top: 94%;
+            left: 55%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-ayu__mail-oficial{
+            position: fixed;
+            top: 94%;
+            left: 73%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-ayu__ubi-oficial{
+            position: fixed;
+            top: 94%;
+            left: 89%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+    }
+    .section-ayu{
+        background-color: rgb(54, 54, 54);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .form-ayu{
+            background-color: whitesmoke;
+            border: solid 3px whitesmoke;
+            margin: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px whitesmoke;
+            .titulo-ayu{
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-bottom: 2rem;
+                font-size: 2rem;
+            }
+            .intro-ayu{
+                font-size: 1rem;
+                text-align: center;
+            }
+            .gracias-ayu{
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-top: 2rem;
+                font-size: 2rem;
+            }
+            .enviar-ayu{
+            margin-left: 0rem;
+            margin-top: 2rem;
+            }
+            .ajustes-ayu{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .footer-ayu{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: 
+        "zalazar"
+        "horarios"
+        "listado";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        text-align: center;
+        box-shadow: 0px 0px 10px whitesmoke;
+        z-index: 1;
+        .footer-ayu__zalazar{
+            grid-area: zalazar;
+            margin-top: 1rem;
+            .footer-ayu__zalazar--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-ayu__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-ayu__horario{
+            grid-area: horarios;
+            margin-top: 1rem;
+            .footer-ayu__horario--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-ayu__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-ayu__listado{
+            grid-area: listado;
+            margin-top: 1rem;
+            .footer-ayu__listado--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-ayu__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+    
+        }
+    }
+    /*REG*/
+    .apps-reg{
+        z-index: 2;
+        .apps-reg__facebook-oficial {    
+            position: fixed;
+            top: 94%;
+            left: 2%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-reg__insta-oficial{
+            position: fixed;
+            top: 94%;
+            left: 21%;
+            transition: all 300ms;
+            color:$color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-reg__tw-oficial{
+            position: fixed;
+            top: 94%;
+            left: 38%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-reg__wpp-oficial{
+            position: fixed;
+            top: 94%;
+            left: 55%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-reg__mail-oficial{
+            position: fixed;
+            top: 94%;
+            left: 73%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+        .apps-reg__ubi-oficial{
+            position: fixed;
+            top: 94%;
+            left: 89%;
+            transition: all 300ms;
+            color: $color-ayunos;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+    }
+    .section-reg{
+        background-color: rgb(54, 54, 54);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .form-reg{
+            background-color: whitesmoke;
+            border: solid 3px whitesmoke;
+            margin: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px whitesmoke;
+            z-index: 1;
+            .h1-reg{
+                font-size: 2rem;
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .form-dos{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .form-tres{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 0rem;
+        }
+    }
+    .footer-reg{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: 
+        "zalazar"
+        "horarios"
+        "listado";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        text-align: center;
+        box-shadow: 0px 0px 10px whitesmoke;
+        z-index: 1;
+        .footer-reg__zalazar{
+            grid-area: zalazar;
+            margin-top: 1rem;
+            .footer-reg__zalazar--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-reg__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-reg__horario{
+            grid-area: horarios;
+            margin-top: 1rem;
+            .footer-reg__horario--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-reg__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-reg__listado{
+            grid-area: listado;
+            margin-top: 1rem;
+            .footer-reg__listado--h2{
+                font-size: 1.5rem;
+                border-top: 1px solid black;
+                display: inline;
+            }
+            .footer-reg__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+    
+        }
+    }
 }
-@media only screen and (max-width: 480px){
+@media screen and (min-width: 769px){
+    .header__titulo{
+        font-size: 10rem;
+    }
+    .header__h2{
+        font-size: 1.5rem;
+    }
+    .lija{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .pincel{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .rodillo{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .consejos-borde{
+        border-top: solid 1px rgb(107, 107, 107);
+        padding-top: 2rem;
+    }
+    .consejos-a{
+        text-decoration: none;
+        padding-left: 1rem;
+    }
+    .row{
+        margin-top: 0rem;
+        margin-bottom: 20rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .apps{
+        z-index: 2;
+        .apps__facebook-oficial {    
+            position: fixed;
+            top: 20%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+        .apps__insta-oficial{
+            position: fixed;
+            top: 31%;
+            left: 93%;
+            transition: all 300ms;
+            color:$color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+        .apps__tw-oficial{
+            position: fixed;
+            top: 42%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+        .apps__wpp-oficial{
+            position: fixed;
+            top: 53%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+        .apps__mail-oficial{
+            position: fixed;
+            top: 64%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+        .apps__ubi-oficial{
+            position: fixed;
+            top: 75%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-apps;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+    .footer{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar horarios listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px $color-card;
+        z-index: 1;
+        .footer__zalazar{
+            grid-area: zalazar;
+            margin-top: 4rem;
+            color: white;
+            .footer__zalazar--h2{
+                font-size: 1.5rem;
+            }
+            .footer__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer__horario{
+            grid-area: horarios;
+            margin-top: 4rem;
+            color: white;
+            .footer__horario--h2{
+                font-size: 1.5rem;
+            }
+            .footer__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer__listado{
+            grid-area: listado;
+            margin-top: 4rem;
+            color: white;
+            .footer__listado--h2{
+                font-size: 1.5rem;
+            }
+            .footer__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
     
-}
-@media only screen and (max-width: 600px){
+        }
+    }
+    /*PRO*/
+    .header-pro__titulo{
+        font-size: 10rem;
+    }
+    .header-pro__h2{
+        font-size: 1.5rem;
+    }
+    .footer-pro{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar horarios listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px $color-card;
+        z-index: 1;
+        .footer-pro__zalazar{
+            grid-area: zalazar;
+            margin-top: 4rem;
+            color: white;
+            .footer-pro__zalazar--h2{
+                font-size: 1.5rem;
+            }
+            .footer-pro__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-pro__horario{
+            grid-area: horarios;
+            margin-top: 4rem;
+            color: white;
+            .footer-pro__horario--h2{
+                font-size: 1.5rem;
+            }
+            .footer-pro__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-pro__listado{
+            grid-area: listado;
+            margin-top: 4rem;
+            color: white;
+            .footer-pro__listado--h2{
+                font-size: 1.5rem;
+            }
+            .footer-pro__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
     
-}
-@media only screen and (max-width: 768px){
+        }
+    }
+    /*NOS*/
+    .header-nos__titulo{
+        font-size: 10rem;
+    }
+    .header-nos__h2{
+        font-size: 1.5rem;
+    }
+    .section-nos{
+        display: grid;
+        grid-template-areas:
+        "img-nos text-nos ";
+        grid-template-columns: 30% 70%;
+        background-color: rgba(252, 223, 185, 0.274);
+        .text-nos{
+            grid-area: text-nos;
+            padding-bottom: 2rem;
+            border-bottom: solid 1px rgb(218, 3, 3);
+            .h1-nos{
+                text-align: center;
+                color: rgb(218, 3, 3);
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                padding-top: 3rem;
+                border-bottom: solid 1px rgb(218, 3, 3);
+            }
+        }
+        .img-nos{
+            grid-area: img-nos;
+            padding-bottom: 2rem;
+            border-bottom: solid 1px rgb(218, 3, 3);
+            .img-dos{
+                margin-top: 4rem;
+                margin-right: 1rem;
+                margin-bottom: 5rem;
+                margin-left: 2rem;
+                box-shadow: 0px 0px 10px black;
+                transition: all 300ms;
+            }
+        } 
+        .img-dos:hover{
+            transform: scale(1.5);
+        }
+    }
+    .footer-nos{
+        background-color: $color-card;
+        display: grid;
+        grid-template-areas: 
+        "zalazar horarios listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px $color-card;
+        z-index: 1;
+        .footer-nos__zalazar{
+            grid-area: zalazar;
+            margin-top: 4rem;
+            color: white;
+            .footer-nos__zalazar--h2{
+                font-size: 1.5rem;
+            }
+            .footer-nos__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-nos__horario{
+            grid-area: horarios;
+            margin-top: 4rem;
+            color: white;
+            .footer-nos__horario--h2{
+                font-size: 1.5rem;
+            }
+            .footer-nos__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .footer-nos__listado{
+            grid-area: listado;
+            margin-top: 4rem;
+            color: white;
+            .footer-nos__listado--h2{
+                font-size: 1.5rem;
+            }
+            .footer-nos__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+    /*AYU*/
+    .apps-ayu{
+        z-index: 2;
+        .apps-ayu__facebook-oficial {    
+            position: fixed;
+            top: 20%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-ayu__insta-oficial{
+            position: fixed;
+            top: 31%;
+            left: 93%;
+            transition: all 300ms;
+            color:$color-ayunos;
+        }
+        .apps-ayu__tw-oficial{
+            position: fixed;
+            top: 42%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-ayu__wpp-oficial{
+            position: fixed;
+            top: 53%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-ayu__mail-oficial{
+            position: fixed;
+            top: 64%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-ayu__ubi-oficial{
+            position: fixed;
+            top: 75%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+    }
+    .section-ayu{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: rgb(54, 54, 54);
+        .form-ayu{
+            background-color: whitesmoke;
+            border: solid 3px whitesmoke;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px whitesmoke;
+            .titulo-ayu{
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+            .intro-ayu{
+                font-size: 1rem;
+                text-align: center;
+            }
+            .gracias-ayu{
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-top: 2rem;
+                font-size: 2rem;
+            }
+            .enviar-ayu{
+            margin-left: 29rem;
+            margin-top: 2rem;
+            }
+            .ajustes-ayu{
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .footer-ayu{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: 
+        "zalazar horarios listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px whitesmoke;
+        z-index: 1;
+        .footer-ayu__zalazar{
+            grid-area: zalazar;
+            margin-top: 4em;
+            .footer-ayu__zalazar--h2{
+                font-size: 1.5em;
+            }
+            .footer-ayu__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
+        }
+        .footer-ayu__horario{
+            grid-area: horarios;
+            margin-top: 4em;
+            .footer-ayu__horario--h2{
+                font-size: 1.5em;
+            }
+            .footer-ayu__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
+        }
+        .footer-ayu__listado{
+            grid-area: listado;
+            margin-top: 4em;
+            .footer-ayu__listado--h2{
+                font-size: 1.5em;
+            }
+            .footer-ayu__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
     
-}
-@media only screen and (max-width: 1024px){
+        }
+    }
+    /*REG*/
+    .apps-reg{
+        z-index: 2;
+        .apps-reg__facebook-oficial {    
+            position: fixed;
+            top: 20%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-reg__insta-oficial{
+            position: fixed;
+            top: 31%;
+            left: 93%;
+            transition: all 300ms;
+            color:$color-ayunos;
+        }
+        .apps-reg__tw-oficial{
+            position: fixed;
+            top: 42%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-reg__wpp-oficial{
+            position: fixed;
+            top: 53%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-reg__mail-oficial{
+            position: fixed;
+            top: 64%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+        .apps-reg__ubi-oficial{
+            position: fixed;
+            top: 75%;
+            left: 93%;
+            transition: all 300ms;
+            color: $color-ayunos;
+        }
+    }
+    .section-reg{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: rgb(54, 54, 54);
+        .form-reg{
+            background-color: whitesmoke;
+            border: solid 3px whitesmoke;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-radius: 1%;
+            box-shadow: 0px 0px 10px whitesmoke;
+            height: 45rem;
+            .h1-reg{
+                font-size: 3rem;
+                color: rgb(23, 177, 248);
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+        }
+        .form-dos{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .form-tres{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 27rem;
+        }
+    }
+    .footer-reg{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: 
+        "zalazar horarios listado";
+        grid-template-columns: 33% 33% auto;
+        grid-template-rows: auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px whitesmoke;
+        z-index: 1;
+        .footer-reg__zalazar{
+            grid-area: zalazar;
+            margin-top: 4em;
+            .footer-reg__zalazar--h2{
+                font-size: 1.5em;
+            }
+            .footer-reg__zalazar--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
+        }
+        .footer-reg__horario{
+            grid-area: horarios;
+            margin-top: 4em;
+            .footer-reg__horario--h2{
+                font-size: 1.5em;
+            }
+            .footer-reg__horario--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
+        }
+        .footer-reg__listado{
+            grid-area: listado;
+            margin-top: 4em;
+            .footer-reg__listado--h2{
+                font-size: 1.5em;
+            }
+            .footer-reg__listado--p{
+                padding-top: 0.5rem;
+                font-size: 1em;
+            }
     
+        }
+    }
 }

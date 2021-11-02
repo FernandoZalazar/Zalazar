@@ -278,8 +278,6 @@ $color-card: rgb(119, 51, 31);
         transition: all 300ms;
     }
     .productos-pro{
-        position: absolute;
-        display: inline;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
@@ -462,8 +460,6 @@ $color-card: rgb(119, 51, 31);
         transition: all 300ms;
     }
     .productos-nos{
-        position: absolute;
-        display: inline;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
@@ -586,8 +582,6 @@ $color-card: rgb(119, 51, 31);
         transition: all 300ms;
     }
     .productos-ayu{
-        position: absolute;
-        display: inline;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
@@ -655,8 +649,6 @@ $color-card: rgb(119, 51, 31);
         transition: all 300ms;
     }
     .productos-reg{
-        position: absolute;
-        display: inline;
         text-decoration: none;
         color: $color-href;
         margin-left: 2rem;
@@ -1459,6 +1451,7 @@ $color-card: rgb(119, 51, 31);
             color: $color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
         .apps__insta-oficial{
             position: fixed;
@@ -1468,6 +1461,7 @@ $color-card: rgb(119, 51, 31);
             color:$color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
         .apps__tw-oficial{
             position: fixed;
@@ -1477,6 +1471,7 @@ $color-card: rgb(119, 51, 31);
             color: $color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
         .apps__wpp-oficial{
             position: fixed;
@@ -1486,6 +1481,7 @@ $color-card: rgb(119, 51, 31);
             color: $color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
         .apps__mail-oficial{
             position: fixed;
@@ -1495,6 +1491,7 @@ $color-card: rgb(119, 51, 31);
             color: $color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
         .apps__ubi-oficial{
             position: fixed;
@@ -1504,6 +1501,7 @@ $color-card: rgb(119, 51, 31);
             color: $color-apps;
             height: 3rem;
             width: 3rem;
+            z-index: 2;
         }
     }
     .footer{

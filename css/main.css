@@ -235,8 +235,6 @@
     margin-left: 2rem;
     transition: all 300ms; }
   #nav-pro .productos-pro {
-    position: absolute;
-    display: inline;
     text-decoration: none;
     color: black;
     margin-left: 2rem;
@@ -390,8 +388,6 @@
     margin-left: 2rem;
     transition: all 300ms; }
   #nav-nos .productos-nos {
-    position: absolute;
-    display: inline;
     text-decoration: none;
     color: black;
     margin-left: 2rem;
@@ -496,8 +492,6 @@
     margin-left: 2rem;
     transition: all 300ms; }
   #nav-ayu .productos-ayu {
-    position: absolute;
-    display: inline;
     text-decoration: none;
     color: black;
     margin-left: 2rem;
@@ -559,8 +553,6 @@
     margin-left: 2rem;
     transition: all 300ms; }
   #nav-reg .productos-reg {
-    position: absolute;
-    display: inline;
     text-decoration: none;
     color: black;
     margin-left: 2rem;
@@ -1201,7 +1193,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
     .apps .apps__insta-oficial {
       position: fixed;
       top: 31%;
@@ -1209,7 +1202,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
     .apps .apps__tw-oficial {
       position: fixed;
       top: 42%;
@@ -1217,7 +1211,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
     .apps .apps__wpp-oficial {
       position: fixed;
       top: 53%;
@@ -1225,7 +1220,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
     .apps .apps__mail-oficial {
       position: fixed;
       top: 64%;
@@ -1233,7 +1229,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
     .apps .apps__ubi-oficial {
       position: fixed;
       top: 75%;
@@ -1241,7 +1238,8 @@
       transition: all 300ms;
       color: rgba(245, 49, 0, 0.774);
       height: 3rem;
-      width: 3rem; }
+      width: 3rem;
+      z-index: 2; }
   .footer {
     background-color: #77331f;
     display: grid;

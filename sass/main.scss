@@ -73,8 +73,6 @@ $color-card: rgb(119, 51, 31);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
     text-align: center;
     animation-name: header;
     animation-duration: 2s;
@@ -1020,7 +1018,7 @@ $color-card: rgb(119, 51, 31);
         "text-nos"
         "img-nos";
         grid-template-columns: 100%;
-        grid-template-rows: 76% 24%;
+        grid-template-rows: 77% 23%;
         background-color: rgba(252, 223, 185, 0.274);
         .text-nos{
             grid-area: text-nos;
@@ -1037,9 +1035,8 @@ $color-card: rgb(119, 51, 31);
         }
         .img-nos{
             grid-area: img-nos;
-            margin: 0.5rem;
+            margin: 0.3rem;
             .img-dos{
-                box-shadow: 0px 0px 10px black;
                 transition: all 300ms;
             }
         } 
